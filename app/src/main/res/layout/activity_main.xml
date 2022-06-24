@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tsNome"
+        android:layout_width="94dp"
+        android:layout_height="19dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/tsNome"
+        app:layout_constraintBottom_toTopOf="@+id/tresul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="@string/tsNome" />
+
+    <EditText
+        android:id="@+id/txtPeso"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="@string/txtPeso"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtAltura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtAltura"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginEnd="95dp"
+        android:ems="10"
+        android:hint="@string/txtAltura"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMasc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPeso" />
+
+    <TextView
+        android:id="@+id/tresul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="59dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPeso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnMasc"
+        android:layout_width="172dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="Masc"
+        android:rotationX="-2"
+        android:text="@string/btnMasc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnFem"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAltura" />
+
+    <Button
+        android:id="@+id/btnFem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="296dp"
+        android:onClick="Fem"
+        android:text="@string/btnFem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMasc"
+        app:layout_constraintTop_toBottomOf="@+id/txtAltura"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

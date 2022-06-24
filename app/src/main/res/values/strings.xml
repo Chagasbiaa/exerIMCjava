@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">imc3</string>
+    <string name="tsNome">Calculo de IMC</string>
+    <string name="txtPeso">Digite seu Peso</string>
+    <string name="txtAltura">Digite sua Altura</string>
+    <string name="btnMasc">IMC Masculino</string>
+    <string name="btnFem">IMC Feminino</string>
+
+</resources>
